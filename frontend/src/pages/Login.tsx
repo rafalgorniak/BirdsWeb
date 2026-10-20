@@ -52,8 +52,7 @@ const styles: Record<string, CSSProperties> = {
     alignItems: "center",
     padding: "24px",
     boxSizing: "border-box",
-    backgroundColor: "#f5f7f2",
-    fontFamily: "system-ui",
+    backgroundColor: "#f8f7f1",
   },
 
   card: {

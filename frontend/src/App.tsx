@@ -8,15 +8,20 @@ import Login from "./pages/Login"
 import Moderation from "./pages/Moderation";
 import Feed from "./pages/Feed";
 import Trips from "./pages/Trips";
+import { useState } from "react";
+import WelcomePage from "./pages/WelcomePage";
 
 export default function App() {
+
+  const [logged, setLogged] = useState<boolean>(false);
+
   return (
     <>
       <Navbar />
 
       <main style={styles.main}>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={!logged ? <WelcomePage /> : <Dashboard />} />
 
           <Route path="/register" element={<Register />}></Route>
           <Route path="/login" element={<Login />}></Route>

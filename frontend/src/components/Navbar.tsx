@@ -16,7 +16,7 @@ export default function Navbar() {
         🐦 Ptasie perypetie
       </Link>
       <div style={styles.links}>
-        {logged ?
+        {!logged ?
           (<div style={styles.section}>
             <a style={styles.link} href="/trip">
               Dodaj wycieczkę
